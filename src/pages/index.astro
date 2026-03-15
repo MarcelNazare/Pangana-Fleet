@@ -1,5 +1,17 @@
 ---
-
+import "../styles/global.css";
+import Nav from "../components/nav.astro";
+import Hero from "../components/hero.astro";
+import Problem from "../components/problem_section.astro";
+import SocialProof from "../components/social_proof.astro";
+import HowItWorks from "../components/how_it_works.astro";
+import Services from "../components/services.astro";
+import Why from "../components/why.astro";
+import About from "../components/about.astro";
+import Industries from "../components/industries.astro";
+import Cta from "../components/cta.astro";
+import Footer from "../components/footer.astro";
+import Fab from "../components/fab.astro";
 ---
 
 <html lang="en">
@@ -7,11 +19,39 @@
 		<meta charset="utf-8" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
+		<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
+		<title>Pangana Fleet | Zambia's Specialist Truck Brokerage</title>
+		<link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@700;800&amp;family=Manrope:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+		<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 	</head>
-	<body>
-		<h1>Astro</h1>
+	<body class="bg-background text-on-surface">
+		<!-- NAVIGATION BAR -->
+		<Nav/>
+		<!-- SECTION 1 — HERO -->
+		<Hero/>
+		<!-- SECTION 2 — SOCIAL PROOF BAR -->
+		<SocialProof/>
+		<!-- SECTION 3 — THE PROBLEM -->
+		<Problem/>
+		<!-- SECTION 4 — HOW IT WORKS -->
+		<HowItWorks/>
+		<!-- SECTION 5 — SERVICES -->
+		<Services/>
+		<!-- SECTION 6 — WHY PANGANA FLEET -->
+		<Why/>
+		<!-- SECTION 7 — ABOUT -->
+		<About/>
+		<!-- SECTION 8 — INDUSTRIES -->
+		<Industries/>
+		<!-- SECTION 9 — CALL TO ACTION -->
+		<Cta/>
+		<!-- FOOTER -->
+		<Footer/>
+		<!-- FAB (Contact Us) -->
+		<Fab/>
+
+
+
 	</body>
 </html>
