@@ -1,0 +1,46 @@
+---
+import "../styles/global.css";
+import Nav from "../components/nav.astro";
+import Hero from "../components/hero.astro";
+import Problem from "../components/problem_section.astro";
+import SocialProof from "../components/social_proof.astro";
+import HowItWorks from "../components/how_it_works.astro";
+import Services from "../components/services.astro";
+import Why from "../components/why.astro";
+import About from "../components/about.astro";
+import Industries from "../components/industries.astro";
+import Cta from "../components/cta.astro";
+import Footer from "../components/footer.astro";
+import Fab from "../components/fab.astro";
+import SpeedInsights from '@vercel/speed-insights/astro';
+import Analytics  from "@vercel/analytics/astro";
+
+interface Props {
+	title: string;
+
+}
+
+const { title } = Astro.props;
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="icon" href="/favicon.ico" />
+		<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+		<link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@700;800&amp;family=Manrope:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+		<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+	</head>
+	<body class="bg-background text-on-surface">
+		<!-- SPEED INSIGHTS -->
+		<SpeedInsights/>
+		<!-- ANALYTICS -->
+		<Analytics/>
+
+		<slot/>
+
+	</body>
+</html>
